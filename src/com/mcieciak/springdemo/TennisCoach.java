@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
  * Created by Mateusz on 17.10.2016.
  */
 
-@Component("thatSillyCoach")
+@Component
 public class TennisCoach implements Coach {
 
     @Override
