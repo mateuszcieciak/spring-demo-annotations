@@ -18,8 +18,8 @@ public class TennisCoach implements Coach {
     }
 
     @Autowired
-    public void setFortuneService(FortuneService theFortuneService) {
-        System.out.println(">> TennisCoach: inside default setFortuneService() method");
+    public void doSomeCrazyStuff(FortuneService theFortuneService) {
+        System.out.println(">> TennisCoach: inside default doSomeCrazyStuff() method");
         fortuneService = theFortuneService;
     }
 
