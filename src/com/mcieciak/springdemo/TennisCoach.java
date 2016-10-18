@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach {
 
+    @Autowired
     private FortuneService fortuneService;
 
     //    zdefiniowanie domyslnego konstruktora
@@ -17,11 +18,11 @@ public class TennisCoach implements Coach {
         System.out.println(">> TennisCoach: inside default constructor");
     }
 
-    @Autowired
-    public void doSomeCrazyStuff(FortuneService theFortuneService) {
-        System.out.println(">> TennisCoach: inside default doSomeCrazyStuff() method");
-        fortuneService = theFortuneService;
-    }
+//    @Autowired
+//    public void doSomeCrazyStuff(FortuneService theFortuneService) {
+//        System.out.println(">> TennisCoach: inside default doSomeCrazyStuff() method");
+//        fortuneService = theFortuneService;
+//    }
 
 //    @Autowired
 //    public TennisCoach(FortuneService theFortuneService){
