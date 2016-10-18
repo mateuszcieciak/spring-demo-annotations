@@ -19,6 +19,8 @@ public class AnnotationDemoApp {
 //        Wywolanie metody na bean
         System.out.println(theCoach.getDailyWorkout());
 
+        System.out.println(theCoach.getDailyFortune());
+
         context.close();
     }
 }
