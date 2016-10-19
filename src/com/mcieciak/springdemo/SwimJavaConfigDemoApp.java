@@ -14,12 +14,16 @@ public class SwimJavaConfigDemoApp {
                 new AnnotationConfigApplicationContext(SportConfig.class);
 
 //        Wziecie bean ze spring-container
-        Coach theCoach = context.getBean("swimCoach", Coach.class);
+        SwimCoach theCoach = context.getBean("swimCoach", SwimCoach.class);
 
 //        Wywolanie metody na bean
         System.out.println(theCoach.getDailyWorkout());
 
         System.out.println(theCoach.getDailyFortune());
+
+//        Wywolanie nowych metod na bean
+        System.out.println("email: "+theCoach.getEmail());
+        System.out.println("team: "+theCoach.getTeam());
 
         context.close();
 
