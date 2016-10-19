@@ -17,7 +17,7 @@ public class TennisCoach implements Coach {
     //    @Qualifier mowi Springowi ktora konkretnie implementacje FortuneService ma wstrzyknac,
 //    gdy jest ich kilka
     @Autowired
-    @Qualifier("randomFortuneService")
+    @Qualifier("activityFortuneService")
     private FortuneService fortuneService;
 
     //    zdefiniowanie domyslnego konstruktora

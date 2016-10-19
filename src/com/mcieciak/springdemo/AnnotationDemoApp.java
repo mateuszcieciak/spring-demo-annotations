@@ -10,11 +10,11 @@ public class AnnotationDemoApp {
     public static void main(String[] args) {
 
 //        Wczytanie pliku konfiguracyjnego Spring
-        ClassPathXmlApplicationContext context=
+        ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
 
 //        Wziecie bean ze spring-container
-        Coach theCoach=context.getBean("tennisCoach", Coach.class);
+        Coach theCoach = context.getBean("tennisCoach", Coach.class);
 
 //        Wywolanie metody na bean
         System.out.println(theCoach.getDailyWorkout());
@@ -22,5 +22,6 @@ public class AnnotationDemoApp {
         System.out.println(theCoach.getDailyFortune());
 
         context.close();
+
     }
 }
